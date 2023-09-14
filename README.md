@@ -17,24 +17,18 @@ This smart contract includes the following functionalities:
 
 - The constructor sets the initial contract owner to the address that deploys the contract.
 
-### `setValue(uint256 _newValue)`
+### `setValue()`
 
 - Allows the contract owner to set the contract's value.
 - Uses `require()` to ensure that only the owner can set the value.
 - If the caller is not the owner, the function reverts with an error message.
 
-### `assertExample(uint256 a, uint256 b)`
+### `asserts()`
 
 - Performs an assertion using `assert()` to check if `a` is not equal to `b`.
 - If the assertion fails, the contract will throw an exception.
 
-### `revertExample(uint256 _valueToCheck)`
+### `reverts()`
 
 - Demonstrates the use of `revert()` to check if `_valueToCheck` is less than 10.
 - If the condition is true (i.e., `_valueToCheck` is less than 10), the function reverts with a custom error message.
-
-## Usage
-
-1. Deploy the `FunctionalityContract` on an Ethereum development environment or network.
-2. Set the initial contract owner during deployment.
-3. Call the contract's functions to demonstrate the use of `require()`, `assert()`, and `revert()` statements for conditional checks and error handling.
